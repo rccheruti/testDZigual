@@ -1,0 +1,112 @@
+<section class="hero">
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-2" style="background-color: #F1F2F4;">
+          </div>
+          <div class="col-md-6" style="background-color: #fff;">
+            <div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalTrocaLogo">
+                    <img src="/src/assets/img/logo.png" alt="logo" id="logo">
+                </a>
+            </div>
+
+            <div id="editorLogo">
+                <h4 onclick="console.log('Cliquei no titulo')">Titulo</h4>
+            </div>
+            
+            <script>
+              var quill = new Quill('#editorLogo', {
+                modules: {
+                  toolbar: [
+                    [{ header: [1, 2, false] }],
+                    ['bold', 'italic', 'underline'],
+                    ['image', 'code-block']
+                  ]
+                },
+                theme: 'snow'  // or 'bubble'
+              });
+
+            </script>
+
+            <div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalTrocaImagemCentro">
+                  <img src="/src/assets/img/logo.png" width="400" height="300" style="margin-left: 39%;" id="imagem" alt="imagem">
+                </a>
+            </div>
+
+            <div id="editor">
+              <h4 onclick="console.log('Cliquei no texto')">Rodapé</h4>
+            </div>
+
+            <script>
+
+              var quill = new Quill('#editor', {
+                modules: {
+                  toolbar: [
+                    [{ header: [1, 2, false] }],
+                    ['bold', 'italic', 'underline'],
+                    ['image', 'code-block']
+                  ]
+                },
+                theme: 'snow'  // or 'bubble'
+              });
+
+            </script>
+
+
+          </div>
+          <div class="col-md-2" style="background-color: #F1F2F4;">
+          </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+        <div class="modal fade" id="modalTrocaLogo" tabindex="-1" aria-labelledby="modalLogo" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLogo">Trocar Logo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Selecione abaixo a logo</h6>
+                        <a href="" id="logo1" value="logo1" onclick="alteraLogo1()"> <img src="/src/assets/img/logo.png" width="400" height="300"></a>
+                        <a href="" id="logo2" value="logo2" onclick="alteraLogo2()"> <img src="/src/assets/img/logo.png" width="400" height="300"></a>
+                        <a href="" id="logo3" value="logo3" onclick="alteraLogo3()"> <img src="/src/assets/img/logo.png" width="400" height="300"></a>
+                        <a href="" id="logo4" value="logo4" onclick="alteraLogo4()"> <img src="/src/assets/img/logo.png" width="400" height="300"></a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="modalTrocaImagemCentro" tabindex="-1" aria-labelledby="modalImagemCentro" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalImagemCentro">Trocar Imagem</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Selecione abaixo a imagem</h6>
+                        <a href="" id="Imagem1" value="Imagem1" onclick="alteraImagem1()"><img src="/src/assets/img/logo.png" width="400" height="300"></a>
+                        <a href="" id="Imagem2" value="Imagem2" onclick="alteraImagem2()"><img src="/src/assets/img/logo.png" width="400" height="300"></a>
+                        <a href="" id="Imagem3" value="Imagem3" onclick="alteraImagem3()"><img src="/src/assets/img/logo.png" width="400" height="300"></a>
+                        <a href="" id="Imagem4" value="Imagem4" onclick="alteraImagem4()"><img src="/src/assets/img/logo.png" width="400" height="300"></a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+</section>

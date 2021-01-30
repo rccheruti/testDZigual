@@ -1,0 +1,18 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+$primaryColor:   #fff;
+$accentColor:    #fff;
+$bgColor:        #fff;
+$darkBgColor:    #F1F2F4;
+$lightBgColor:   #F1F2F4;
+$lightTextColor: #000;
+$darkTextColor:  #000;
+
+body {
+   height: 100%;
+   // browsers default to 16px for font-size,
+   // so setting top-level font-size to 62.5%
+   // scales 1rem to equal 10px.
+   font: 62.5% 'Roboto', sans-serif;
+}
+
