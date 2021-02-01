@@ -1,7 +1,7 @@
 # testDZigual
 Teste para vaga de emprego
->Clone o repo
+>1° Clone o repo
 
->npm i
+>2° npm i
 
->npm serve
+>3° npm serve
