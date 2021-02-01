@@ -7,7 +7,7 @@
       <div class="col-md-6" style="background-color: #fff;">
         <div>
           <a href="#" data-bs-toggle="modal" data-bs-target="#modalTrocaLogo">
-            <img [src]='./src/img/logo.png' alt="logo" id="logo">
+            <img scr="{{logo}}" alt="logo" id="logo">
           </a>
         </div>
 
@@ -17,7 +17,7 @@
 
         <div>
           <a href="#" data-bs-toggle="modal" data-bs-target="#modalTrocaImagemCentro">
-            <img scr="/dist/assets/logo.png" width="400" height="300" style="margin-left: 39%;" id="imagem" alt="imagem">
+            <img scr="./src/img/bird.jpg" width="400" height="300" style="margin-left: 39%;" id="imagem" alt="imagem">
           </a>
         </div>
 
@@ -41,13 +41,15 @@
           <h5 class="modal-title" id="modalLogo">Trocar Logo</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <h6>Selecione abaixo a logo</h6>
-          <img src="../../../../src/img/logo.png" width="400" height="300" id="logo1" value="logo1" onclick="alteraLogo1()">
-          <img src="../../../../src/img/logo.png" width="400" height="300" id="logo2" value="logo2" onclick="alteraLogo2()">
-          <img src="../../../../src/img/logo.png" width="400" height="300" id="logo3" value="logo3" onclick="alteraLogo3()">
-          <img src="../../../../src/img/logo.png" width="400" height="300" id="logo4" value="logo4" onclick="alteraLogo4()">
-        </div>
+          <div class="modal-body">
+            <h6>Selecione abaixo a logo</h6>
+  <center>
+            <img src="./src/img/logo.jpg" width="400" height="300" id="logo1" value="logo1" onclick="alteraLogo1()">
+            <img src="./src/img/logo1.jpg" width="400" height="300" id="logo2" value="logo2" onclick="alteraLogo2()">
+            <img src="./src/img/logo2.jpg" width="400" height="300" id="logo3" value="logo3" onclick="alteraLogo3()">
+            <img src="./src/img/logo3.jpg" width="400" height="300" id="logo4" value="logo4" onclick="alteraLogo4()">
+  </center>
+          </div>
 
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -67,10 +69,12 @@
         </div>
         <div class="modal-body">
           <h6>Selecione abaixo a imagem</h6>
-          <img src="../../../../src/img/logo.png" width="400" height="300" id="Imagem1" value="Imagem1" onclick="alteraImagem1()">
-          <img src="../../../../src/img/logo.png" width="400" height="300" id="Imagem2" value="Imagem2" onclick="alteraImagem2()">
-          <img src="../../../../src/img/logo.png" width="400" height="300" id="Imagem3" value="Imagem3" onclick="alteraImagem3()">
-          <img src="../../../../src/img/logo.png" width="400" height="300" id="Imagem4" value="Imagem4" onclick="alteraImagem4()">
+          <center>
+          <img src="./src/img/image.jpg" width="400" height="300" id="Imagem1" value="Imagem1" onclick="alteraImagem1()">
+          <img src="./src/img/image1.jpg" width="400" height="300" id="Imagem2" value="Imagem2" onclick="alteraImagem2()">
+          <img src="./src/img/image2.jpg" width="400" height="300" id="Imagem3" value="Imagem3" onclick="alteraImagem3()">
+          <img src="./src/img/image3.jpg" width="400" height="300" id="Imagem4" value="Imagem4" onclick="alteraImagem4()">
+          </center>
         </div>
 
         <div class="modal-footer">
@@ -80,8 +84,6 @@
       </div>
     </div>
   </div>
-  <script src="./src/js/changeImage.js"></script>
-  <script src="./src/js/editorQuill.js"></script>
 
 </main>
 <navbar></navbar>

@@ -15,10 +15,13 @@ module.exports = {
     }},
   module: {
     loaders: [
-       { test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loader: 'ng-annotate!babel' },
-       { test: /\.html$/, loader: 'raw' },
-       { test: /\.(scss|sass)$/, loader: 'style!css!sass' },
-       { test: /\.css$/, loader: 'style!css' },
+      { test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loader: 'ng-annotate!babel' },
+      { test: /\.html$/, loader: 'raw' },
+      { test: /\.(scss|sass)$/, loader: 'style!css!sass' },
+      { test: /\.css$/, loader: 'style!css' },
+      {test: /\.(png|jpe?g)$/, loader: 'url-loader?mimetype=image/png'},
+      {test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/, loader: "file-loader?name='[path][name].[ext]?[hash]'"}
+
     ],
     rules: [
       {

@@ -22,3 +22,5 @@ function alteraImagem3() {
 function alteraImagem4() {
   document.getElementById("imagem").src = "imagem4.png";
 }
+
+
