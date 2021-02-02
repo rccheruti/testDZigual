@@ -6,6 +6,8 @@ let componentModule = angular.module('app.components', [
   Home,
   About,
 
+
+
 ])
 
 .name;

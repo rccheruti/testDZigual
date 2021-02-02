@@ -2,6 +2,7 @@ var path    = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
+
 module.exports = {
   devtool: 'source-map',
   entry: {},
@@ -20,7 +21,14 @@ module.exports = {
       { test: /\.(scss|sass)$/, loader: 'style!css!sass' },
       { test: /\.css$/, loader: 'style!css' },
       {test: /\.(png|jpe?g)$/, loader: 'url-loader?mimetype=image/png'},
-      {test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/, loader: "file-loader?name='[path][name].[ext]?[hash]'"}
+      {test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/, loader: "file-loader?name='[path][name].[ext]?[hash]'"},
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+          'file?hash=sha512&digest=hex&name=scr/img/[name].[ext]',
+          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
+      }
 
     ],
     rules: [
@@ -35,8 +43,8 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'img/',
-              publicPath: 'img/'
+              outputPath: '/src/img/',
+              publicPath: '/src/img/'
             }
           }
         ]
@@ -62,7 +70,10 @@ module.exports = {
       minChunks: function (module, count) {
         return module.resource && module.resource.indexOf(path.resolve(__dirname, 'client')) === -1;
       }
-    })
+    }),
+
+
+
   ]
 
 
