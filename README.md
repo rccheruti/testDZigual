@@ -7,7 +7,7 @@
 
 ##Teste de conhecimento em NG6 Starter
 
-### 1° > Clone o repositório
+### 1° Clone o repositório
 
 ### 2° Rode dentro da pasta o comando npm i
 
