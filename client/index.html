@@ -10,12 +10,33 @@
     <meta name="description" content="NG6-Starter by @AngularClass">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet">
+
     <base href="/">
   </head>
-  <body ng-app="app" ng-strict-di ng-cloak>
+  <body ng-app="app" ng-strict-di ng-cloak  onload="
+
+        var quill = new Quill('#editorUm', {
+          theme: 'bubble'
+        });
+        var quill = new Quill('#editorDois', {
+          theme: 'bubble'
+        });
+        document.getElementById('logo').src = './src/assets/images/logo.jpg',
+        document.getElementById('logo1').src = './src/assets/images/logo.jpg',
+        document.getElementById('logo2').src = './src/assets/images/logo1.jpg',
+        document.getElementById('logo3').src = './src/assets/images/logo2.jpg',
+        document.getElementById('logo4').src = './src/assets/images/logo3.jpg',
+        document.getElementById('imagem').src = './src/assets/images/image.jpg',
+        document.getElementById('imagem1').src = './src/assets/images/image.jpg',
+        document.getElementById('imagem2').src = './src/assets/images/image1.jpg',
+        document.getElementById('imagem3').src = './src/assets/images/image2.jpg',
+        document.getElementById('imagem4').src = './src/assets/images/image3.jpg'
+  ">
     <app>
       Carregando...
     </app>
+
 
     <!-- Google Analytics: change UA-71073175-2 to be your site's ID -->
     <script>
@@ -26,6 +47,7 @@
       ga('create', 'UA-71073175-2', 'auto');
       ga('send', 'pageview');
     </script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   </body>
 </html>

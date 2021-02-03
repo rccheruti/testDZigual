@@ -1,36 +1,32 @@
 <main>
 <navbar></navbar>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2" style="background-color: #DCDCDC;">
-      </div>
-      <div class="col-md-6" style="background-color: #fff;">
-        <div>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#modalTrocaLogo">
-            <img src="/src/img/logo.jpg" alt="logo" id="logo">
-          </a>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2" style="background-color: #DCDCDC;"></div>
+        <div class="col-md-6" style="background-color: #fff;">
+          <br/>
+          <div>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalTrocaLogo">
+              <img src="{{ logo }}" alt="logo" id="logo" width="100" height="60" style="margin-left: 3%;">
+            </a>
+          </div>
+          <br/>
+          <div id="editorUm">
+            <h1>Este titulo pode ser editado, clique e confira.</h1>
+          </div>
+          <br/>
+          <div>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalTrocaImagemCentro">
+              <img src="{{ image }}" width="500" height="300" style="margin-left: 3%;" id="imagem" alt="imagem">
+            </a>
+          </div>
+          <div id="editorDois">
+            <h3>Rodapé, ah o rodapé, ele também é editável.</h3>
+          </div>
         </div>
-
-        <div id="editorUm">
-          <h4 onclick="console.log('Cliquei no titulo')">Titulo</h4>
-        </div>
-
-        <div>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#modalTrocaImagemCentro">
-            <img src="/src/img/image.jpg" width="400" height="300" style="margin-left: 39%;" id="imagem" alt="imagem">
-          </a>
-        </div>
-
-        <div id="editorDois">
-          <h4 onclick="console.log('Cliquei no texto')">Rodapé</h4>
-        </div>
-
-
-      </div>
-      <div class="col-md-2" style="background-color: #DCDCDC;">
+        <div class="col-md-2" style="background-color: #DCDCDC;"></div>
       </div>
     </div>
-  </div>
 
 
   <!-- Modal -->
@@ -43,18 +39,16 @@
         </div>
           <div class="modal-body">
             <h6>Selecione abaixo a logo</h6>
-  <center>
-            <img src="/src/img/logo.jpg" width="400" height="300" id="logo1" value="logo1" onclick="alteraLogo1()">
-            <img src="/src/img/logo1.jpg" width="400" height="300" id="logo2" value="logo2" onclick="alteraLogo2()">
-            <img src="/src/img/logo2.jpg" width="400" height="300" id="logo3" value="logo3" onclick="alteraLogo3()">
-            <img src="/src/img/logo3.jpg" width="400" height="300" id="logo4" value="logo4" onclick="alteraLogo4()">
-  </center>
+            <center>
+              <img src="{{ logo }}" class="logos" id="logo1" value="logo1" onclick='alert("Logo alterada com sucesso!"),document.getElementById("logo").src = "./src/assets/images/logo.jpg"' data-bs-dismiss="modal">
+              <img src="{{ logo1 }}" class="logos" id="logo2" value="logo2" onclick='alert("Logo alterada com sucesso!"),document.getElementById("logo").src = "./src/assets/images/logo1.jpg"' data-bs-dismiss="modal">
+              <img src="{{ logo2 }}" class="logos" id="logo3" value="logo3" onclick='alert("Logo alterada com sucesso!"),document.getElementById("logo").src = "./src/assets/images/logo2.jpg"'data-bs-dismiss="modal">
+              <img src="{{ logo3 }}" class="logos" id="logo4" value="logo4" onclick='alert("Logo alterada com sucesso!"),document.getElementById("logo").src = "./src/assets/images/logo3.jpg"'data-bs-dismiss="modal">
+            </center>
           </div>
-
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
         </div>
-
       </div>
     </div>
   </div>
@@ -70,20 +64,17 @@
         <div class="modal-body">
           <h6>Selecione abaixo a imagem</h6>
           <center>
-          <img src="/src/img/image.jpg" width="400" height="300" id="Imagem1" value="Imagem1" onclick="alteraImagem1()">
-          <img src="/src/img/image1.jpg" width="400" height="300" id="Imagem2" value="Imagem2" onclick="alteraImagem2()">
-          <img src="/src/img/image2.jpg" width="400" height="300" id="Imagem3" value="Imagem3" onclick="alteraImagem3()">
-          <img src="/src/img/image3.jpg" width="400" height="300" id="Imagem4" value="Imagem4" onclick="alteraImagem4()">
+            <img src="{{ imagem }}" class="imgs" id="imagem1" value="Imagem1" onclick='alert("Imagem alterada com sucesso!"),document.getElementById("imagem").src = "./src/assets/images/image.jpg"' data-bs-dismiss="modal">
+            <img src="{{ imagem1 }}" class="imgs" id="imagem2" value="Imagem2" onclick='alert("Imagem alterada com sucesso!"),document.getElementById("imagem").src = "./src/assets/images/image1.jpg"' data-bs-dismiss="modal">
+            <img src="{{ imagem2 }}" class="imgs" id="imagem3" value="Imagem3" onclick='alert("Imagem alterada com sucesso!"),document.getElementById("imagem").src = "./src/assets/images/image2.jpg"' data-bs-dismiss="modal">
+            <img src="{{ imagem3 }}" class="imgs" id="imagem4" value="Imagem4" onclick='alert("Imagem alterada com sucesso!"),document.getElementById("imagem").src = "./src/assets/images/image3.jpg"' data-bs-dismiss="modal">
           </center>
         </div>
-
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
         </div>
-
       </div>
     </div>
   </div>
-
 </main>
 <navbar></navbar>
