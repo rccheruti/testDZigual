@@ -15,7 +15,7 @@ module.exports = {
       { test: /\.html$/, loader: 'raw' },
       { test: /\.(scss|sass)$/, loader: 'style!css!sass' },
       { test: /\.css$/, loader: 'style!css' },
-
+  
 
     ],
     rules: [
