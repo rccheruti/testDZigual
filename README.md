@@ -7,11 +7,14 @@
 
 ##Teste de conhecimento em NG6 Starter
 
+*Requerimentos:
+**Node.js versão >=10.0.0
+
 ### 1° > Clone o repositório
 
 ### 2° Rode dentro da pasta o comando npm i
 
-### 3° Logo após a instalação das dependências rode o comando npm serve, a aplicação irá rodar no localhost porta 3000
+### 3° Logo após a instalação das dependências rode o comando npm run serve, a aplicação irá rodar no localhost porta 3000
 
 >Desde nossa conversa, estudei muito, busquei muita informação para poder implementar da forma correta, sem muito material consistente, busquei incansavelmente fazer da melhor forma.
 > Caso não passe no teste, por favor, gostaria muito de saber a forma correta. Aguardo o feedback.
